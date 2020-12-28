@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); //с=2 инкремент (префиксная форма) ++ увеличивает переменную на 1
+
+        d = b++;
+        alert(d); //d=1 инкремент (постфиксная форма) ++ после увеличения возвращает к первоначальному значению
+
+        c = (2 + ++a);
+        alert(c); //с=5 инкремент увеличивает на 1 a=2+1 плюс 2
+
+        d = (2 + b++);
+        alert(d); // d=4 b остается =2 плюс 2
+
+        alert(a); // 3 a=1+ 2 раза инкремент
+
+        alert(b); // 3 b=1+ 2 раза инкремент
+    </script>
+</body>
+
+</html>
